@@ -68,10 +68,10 @@ class html {
                         <div class="navi">
                             <div id="ddtopmenubar" class="mattblackmenu">
                                 <ul>
-                                    <li><a href="../index.php">Home</a></li>
+                                    <li><a href="index.php">Home</a></li>
                                     <li><a href="service.html">Sobre o sistema</a></li>
                                     <li><a href="about.html">Buscar trabalhos</a></li>
-                                    <li><a href="login/login.php">Login</a>
+                                    <li><a href="../login/login.php">Login</a>
                                     </li>
                                 </ul>
                             </div>
