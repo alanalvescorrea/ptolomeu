@@ -1,5 +1,4 @@
-<?php 
-require '../alertas/alertas.php';
+<?php
 require '../interface/html.class.php';
 ?>
 
@@ -7,42 +6,20 @@ require '../interface/html.class.php';
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-
-        <!-- Título -->
         <?php
-        $titulo = new html();
-        $titulo->titulo();
+        $carregaClasseHtml = new html();
+
+        $carregaClasseHtml->unicode();
+        $carregaClasseHtml->titulo();
+        $carregaClasseHtml->metaTag();
+        $carregaClasseHtml->viewport();
+        $carregaClasseHtml->includes();
+        $carregaClasseHtml->carregarJavascrip();
         ?>
-
-        <!-- Descrição, Palavras-chave e  créditos -->
-        <meta name="description" content="Repositorio digital de trabalhos acadêmicos">
-        <meta name="keywords" content="educação,mestrado,doutorado, monografia, biblioteca digital">
-        <meta name="author" content="projeto polosap">
-
-        <!-- Viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
-
-        <!-- Bootstrap CSS -->
-        <link href="../bibliotecas/css/bootstrap.min.css" rel="stylesheet">
-        <!-- DropDownPlugin -->
-        <link href="../bibliotecas/css/ddlevelsmenu-base.css" rel="stylesheet">
-        <link href="../bibliotecas/css/ddlevelsmenu-topbar.css" rel="stylesheet">
-        <!-- Font awesome CSS -->
-        <link href="../bibliotecas/css/font-awesome.min.css" rel="stylesheet">		
-        <!-- Custom CSS -->
-        <link href="../bibliotecas/css/style.css" rel="stylesheet">
-        <!-- Color CSS -->
-        <link href="../bibliotecas/css/color.css" rel="stylesheet">
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="#">
 
     </head>
 
     <body>
-        <!-- Cabeçalho -->
         <?php
         $cabecalho = new html();
         $cabecalho->cabecalho();
@@ -102,33 +79,9 @@ require '../interface/html.class.php';
         </div>
         <!-- Fim Conteúdo-->
 
-        <!-- Rodapé -->
         <?php
         $rodape = new html();
         $rodape->rodape();
         ?>
-
-        <!-- Javascript arquivos -->
-
-        <!-- jQuery -->
-        <script src="../bibliotecas/js/jquery.js"></script>
-
-        <!-- Bootstrap JS -->
-        <script src="../bibliotecas/js/bootstrap.min.js"></script>
-
-        <!-- Isotope -->
-        <script src="../bibliotecas/js/isotope.js"></script>
-
-        <!-- Respond JS for IE8 -->
-        <script src="../bibliotecas/js/respond.min.js"></script>
-
-        <!-- HTML5 Support for IE -->
-        <script src="../bibliotecas/js/html5shiv.js"></script>
-
-        <!-- Modernizer -->
-        <script src="../bibliotecas/js/modernizr.custom.28468.js"></script>
-
-        <!-- Custom JS -->
-        <script src="../bibliotecas/js/custom.js"></script>
     </body>	
 </html>

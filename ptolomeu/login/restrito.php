@@ -39,7 +39,7 @@ require '../interface/html.class.php';
                                 <hr />
                                 <h4>Gerência de Trabalhos Acadêmicos</h4>
                                 <div class="span1">
-                                    <a href="../trabalhoAcadêmico/trabalho_cadastrar.php" class="btn btn-primary">
+                                    <a href="../trabalhoAcademico/trabalhoAcademicoInterface.php" class="btn btn-primary">
                                         <i class="icon-pencil icon-white"></i> <span><strong>Cadastrar</strong></span>
                                     </a>
                                     <a href="../trabalhoAcadêmico/trabalho_listar.php" class="btn btn-primary"> <i
